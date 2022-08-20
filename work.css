@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'ChusaLove';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/ChusaLove.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    }
+    @font-face {
+        font-family: 'MYYeongnamnu';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'SANGJUGyeongcheonIsland';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @keyframes burger_ani {
+        from{
+            top : 1000px;
+            left: 400px;
+        }
+        to{
+            top : 850px;
+            left: 400px;
+        }
+    }
+    @keyframes noodle_ani {
+        from{
+            top : 980px;
+            left: 650px;
+        }
+        to{
+            top : 830px;
+            left: 650px;
+        }
+    }
+    @keyframes pizza_ani {
+        from{
+            top: 1040px;
+            right: 380px;
+        }
+        to{
+            top: 890px;
+            right: 380px;
+
+        }
+    }
+    html{
+        scroll-behavior: smooth;
+      }
+      body{
+        overflow-x:hidden; overflow-y:auto;
+        margin: 0px 0px ;
+        background-color: #ebd4aa;
+        color : #333333;
+        font-family: 'SANGJUGyeongcheonIsland';
+      }
+      section{
+        height: 4000px;
+      }
+      ul{
+        list-style: none;
+        line-height: 20px;
+      }
+      .section{
+        border-left: 3px solid #333333;
+        border-right: 3px solid #333333;
+        text-align: center;
+        margin: 0px 350px;
+        background-color: #ebd4aa;
+      }
+      .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ed9c07;
+        padding: 5px 15px;
+        border-radius: 6px;
+      }
+      .navlogo{
+        font-size: 60px;
+        font-family: 'ChusaLove';
+      }
+
+      a{
+        text-decoration: none;
+        color: #362a2a;
+      }
+      .navitems {
+      font-family: 'MYYeongnamnu';
+        display: flex;
+        list-style: none;
+        padding-left: 0px;
+        font-size: 25px;
+      }
+      .navitems li {
+        padding: 8px 60px;
+
+      }
+      .navitems li:hover {
+        background-color:DeepSkyBlue;
+        border-radius: 6px;
+      }
+      .navbar_hambug{
+        position: absolute;
+        right: 32px;
+        top : 20px;
+        font-size: 32px;
+        display: none;
+      }
+      @media screen and (max-width:768px) {
+       .navbar{
+         flex-direction: column;
+         align-items: flex-start;
+       }
+       .navitems{
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         display: none;
+       }
+      .navitems li{
+        width: 100%;
+        text-align: center;
+        padding: 8px 12px;
+      }
+      .navicons {
+        text-align: center;
+        width: 100%;
+        display: none;
+      }
+      .navbar_hambug{
+        display: block;
+      }
+
+      .navicons.active {
+        display: block;
+      }
+      .navitems.active {
+        display: flex;
+      }
+      }
+
+      .title{
+        text-align: center;
+        font-size: 30px;
+        margin: 0px 0px;
+        padding: 29px;
+      }
+      .logos{
+        position: absolute;
+        top: 220px;
+        left: 452px;
+      }
+    .list1_h{
+        position: relative;
+        top: 370px;
+      }
+      .ul1{
+        position: relative;
+        top: 370px;   
+    }
+    .store_list{
+      position: relative;
+      top: 370px;
+      line-height: 20px;
+    }
+    .bicycle1{
+        position: relative;
+        top: 900px;
+    }
+    .bicycle2{
+        position: relative;
+        top: 900px;
+    }
+    .list2_h{
+        position: relative;
+        top: 890px;
+    }
+    .ul2{
+        position: relative;
+        top: 890px;
+    }
+    .list3_h{
+        position: relative;
+        top: 1400px;
+    }
+    .kakao{
+        position: relative;
+        top: 1400px;
+        right: 200px;
+    }
+    .bread{
+        position: relative;
+        top: 750px;
+        font-size: 20px;
+    }
+    .bp{
+        position: relative;
+        top: 70px;
+        left: 70px;
+    }
+    .many{
+        position: relative;
+        top: 840px;
+        font-size: 20px;
+    }
+    .burger{
+      position: absolute;
+      top : 1000px;
+      left: 400px;
+      animation-name: burger_ani;
+      animation-duration: 1s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+    .noodle{
+      position: absolute;
+      top : 980px;
+      left: 650px;
+      animation-name: noodle_ani;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+    .pizza{
+        position: absolute;
+        top: 1040px;
+        right: 380px;
+        animation-name: pizza_ani;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
